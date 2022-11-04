@@ -1,0 +1,145 @@
+/* Styles for navbar */
+.navLinks li,
+.navLinks li:focus {
+    position: relative;
+}
+.navLinks,
+.navLinks a:focus{
+    position: relative;
+}
+.navLinks>ul>li>a:focus{
+  color: #c02529 !important;
+}
+.navLinks>ul>li>a:before{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: -12px;
+  left: 0;
+  background-color: #c02529;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out 0s;
+}
+.navLinks a:hover:before,
+.navLinks li:hover>a:before,
+.navLinks .active:before {
+  visibility: visible;
+  width: 100%;
+}
+
+/* Styles for Top Strip */
+.topStrip{
+  color: #ffffff;
+  z-index: 10 !important;
+}
+@media (max-width:769px){
+  .topStrip{
+    display: none !important;
+  }
+}
+
+/* section header */
+.sectionHeader {
+  position: relative;
+  padding-bottom: 4px;
+  margin: 2rem;
+}
+
+.sectionHeader::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 115px;
+  height: 3px;
+  background: #c02529;
+  bottom: 0;
+  left: calc(50% - 50px);
+}
+.sectionHeader h2{
+  text-align: center;
+}
+
+/* Footer Title */
+.footer{
+  background-color: #222222;
+}
+.footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.footer li {
+  margin-bottom: 1rem;
+}
+.footerTitle {
+  position: relative;
+  padding-bottom: 4px;
+  margin-bottom: 1rem;
+}
+
+.footerTitle::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 90px;
+  height: 3px;
+  background: #c02529;
+  bottom: 0;
+  left:2px;
+}
+.footerEmailDiv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  padding: 0rem 0rem 0rem 0.3rem;
+  border-radius: 0.3rem;
+  max-width:max-content;
+}
+.footerEmailDiv>img{
+  padding-right: 0.5rem;
+  border-right: 1px solid #000000;
+}
+.footerEmailDiv input{
+  border: none;
+  outline: none;
+}
+.footerEmailDiv button{
+  border: none;
+  border-radius: 0rem 0.3rem 0.3rem 0rem;
+  background-color: #c02529;
+}
+
+.copyright{
+  background-color: black;
+  color: white;
+}
+.copyright p{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.copyright a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+
+/* Slick slider arrows style */
+.slick-prev:before, .slick-next:before{
+  color: #000000 !important;
+  font-size: 30px !important;
+}
+
+/* Our Clients Slider section */
+.clientsSliderDiv{
+  /* width: max-content !important; */
+  padding: 2rem 1rem 2rem 1rem;
+}
+.clientsSliderDiv img{
+  aspect-ratio: 5/1;
+  width: 13rem !important;
+  height: auto !important;
+}
+
+
+
