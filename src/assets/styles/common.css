@@ -44,6 +44,7 @@
   position: relative;
   padding-bottom: 4px;
   margin: 2rem;
+  margin-top: 4rem;
 }
 
 .sectionHeader::before {
@@ -129,16 +130,26 @@
   color: #000000 !important;
   font-size: 30px !important;
 }
+.slick-track {
+  text-align: center;
+}
 
 /* Our Clients Slider section */
 .clientsSliderDiv{
-  /* width: max-content !important; */
-  padding: 2rem 1rem 2rem 1rem;
+  width: max-content !important;
+  padding: 1.5rem;
+  background-color: #f5f5f5;
+  border-radius: 0.5rem;
 }
 .clientsSliderDiv img{
   aspect-ratio: 5/1;
   width: 13rem !important;
   height: auto !important;
+}
+@media (max-width: 426px){
+  .clientSliderContainer{
+    width: 92% !important;
+  }
 }
 
 

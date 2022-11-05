@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../../assets/styles/common.css';
-import logo from '../../assets/images/icons/logo.png';
+import logo from '../../assets/images/icons/logo.webp';
 import SearchIcon from '@mui/icons-material/Search';
 
 function NavBar() {

@@ -1,23 +1,26 @@
 import React, { useEffect, useState } from "react";
 import "../assets/styles/home.css";
 import "../assets/styles/common.css";
-import sliderImg1 from "../assets/images/homeSliderImage1.png";
-import simplifyDgtlImg from "../assets/images/Layer 35.png";
-import ceoImg from "../assets/images/Layer 36.png";
-import caseStudyImg from "../assets/images/Layer 39.png";
-import caseStudyImg2 from "../assets/images/Layer 40.png";
-import caseStudyImg3 from "../assets/images/Layer 41.png";
-import caseStudyImg4 from "../assets/images/Layer 42.png";
-import frameworkIcon from "../assets/images/icons/framework.png";
-import programIcon from "../assets/images/icons/program.jpg";
-import methodologyIcon from "../assets/images/icons/methodology.png";
-import engagementIcon from "../assets/images/icons/engagement.jpg";
-import studioIcon from "../assets/images/icons/studio.png";
-import labsIcon from "../assets/images/icons/labs.png";
-import adsIcon from "../assets/images/icons/ads.png";
-import getStartedArrow from "../assets/images/icons/arrow.png";
-import servicesImg1 from "../assets/images/servicesImg1.jpg";
-import servicesImg2 from "../assets/images/servicesImg2.jpg";
+import sliderImg1 from "../assets/images/homeSliderImage1.webp";
+import simplifyDgtlImg from "../assets/images/Layer 35.webp";
+import ceoImg from "../assets/images/Layer 36.webp";
+import caseStudyImg from "../assets/images/Layer 39.webp";
+import caseStudyImg2 from "../assets/images/caseStudyImg2.webp";
+import caseStudyImg3 from "../assets/images/caseStudyImg3.webp";
+import caseStudyImg4 from "../assets/images/caseStudyImg4.webp";
+import frameworkIcon from "../assets/images/icons/framework.webp";
+import programIcon from "../assets/images/icons/program.webp";
+import methodologyIcon from "../assets/images/icons/methodology.webp";
+import engagementIcon from "../assets/images/icons/engagement.webp";
+import studioIcon from "../assets/images/icons/studio.webp";
+import labsIcon from "../assets/images/icons/labs.webp";
+import adsIcon from "../assets/images/icons/ads.webp";
+import getStartedArrow from "../assets/images/icons/arrow.webp";
+import servicesImg1 from "../assets/images/servicesImg1.webp";
+import servicesImg2 from "../assets/images/servicesImg2.webp";
+import latestInsightsImg1 from "../assets/images/latestInsightsImg1.webp";
+import latestInsightsImg2 from "../assets/images/latestInsightsImg2.webp";
+import latestInsightsImg3 from "../assets/images/latestInsightsImg3.webp";
 
 import { Button } from "./styledComponents/Button";
 import { SubHeading } from "./styledComponents/Heading";
@@ -64,10 +67,11 @@ function Home() {
                   alt="..."
                 />
                 <div className="layer"></div>
-                <div className="redBox"></div>
                 <div className="landingText">
                   <h1>We Help You Grow in a</h1>
-                  <h1>Predictable & Sustainable Way</h1>
+                  <span className="redBox">
+                    <h1>Predictable & Sustainable Way</h1>
+                  </span>
                   <p>Lorem ipsum is simply dummy text of the printing.</p>
                   <button>LEARN MORE</button>
                 </div>
@@ -79,10 +83,11 @@ function Home() {
                   alt="..."
                 />
                 <div className="layer"></div>
-                <div className="redBox"></div>
                 <div className="landingText">
                   <h1>We Help You Grow in a</h1>
-                  <h1>Predictable & Sustainable Way</h1>
+                  <span className="redBox">
+                    <h1>Predictable & Sustainable Way</h1>
+                  </span>
                   <p>Lorem ipsum is simply dummy text of the printing.</p>
                   <button>LEARN MORE</button>
                 </div>
@@ -94,10 +99,11 @@ function Home() {
                   alt="..."
                 />
                 <div className="layer"></div>
-                <div className="redBox"></div>
                 <div className="landingText">
                   <h1>We Help You Grow in a</h1>
-                  <h1>Predictable & Sustainable Way</h1>
+                  <span className="redBox">
+                    <h1>Predictable & Sustainable Way</h1>
+                  </span>
                   <p>Lorem ipsum is simply dummy text of the printing.</p>
                   <button>LEARN MORE</button>
                 </div>
@@ -153,43 +159,51 @@ function Home() {
         </div>
 
         {/* Our services section */}
-        <div className="container servicesSection">
+        <div className="container">
           <div className="sectionHeader">
             <h2>Our Services</h2>
           </div>
-          <p className="text-center px-5">
+          <p className="text-center px-5 pb-5">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s.
           </p>
           <div className="row m-auto text-center">
-            <div className="col-lg-6 position-relative">
-              <img className="servicesImg img-fluid" src={servicesImg1} alt="" />
+            <div className="col-lg-6 position-relative servicesDiv1">
+              <img
+                className="servicesImg img-fluid"
+                src={servicesImg1}
+                alt=""
+              />
               <div className="servicesLowerDiv">
-                <SubHeading>Transform Your Digital Marketing</SubHeading>
+                <h4>Transform Your Digital Marketing</h4>
                 <p>
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry.
                 </p>
-                <Button primary>Learn More</Button>
+                <Button>LEARN MORE</Button>
               </div>
             </div>
-            <div className="col-lg-6 position-relative">
-              <img className="servicesImg img-fluid" src={servicesImg2} alt="" />
+            <div className="col-lg-6 position-relative servicesDiv2">
+              <img
+                className="servicesImg img-fluid"
+                src={servicesImg2}
+                alt=""
+              />
               <div className="servicesLowerDiv">
-                <SubHeading>Transform Your Digital Marketing</SubHeading>
+                <h4>Build Impactful Assets</h4>
                 <p>
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry.
                 </p>
-                <Button primary>Learn More</Button>
+                <Button>LEARN MORE</Button>
               </div>
             </div>
           </div>
         </div>
 
         {/*Ideal Digital Partner section */}
-        <div className="idealDigitalDiv">
+        <div className="container idealDigitalDiv">
           <div className="sectionHeader">
             <h2>What Makes Us Your Ideal Digital Partner</h2>
           </div>
@@ -391,7 +405,7 @@ function Home() {
               <Button primary>LEARN MORE</Button>
             </div>
           </div>
-          <div className="row justify-content-center">
+          <div className="row gy-5 justify-content-center">
             <div className="col-md-3">
               <div className="card">
                 <div className="card-body p-0">
@@ -426,107 +440,92 @@ function Home() {
         </div>
 
         {/* Testimonials section */}
-        <div className="sectionHeader">
-          <h2>From Our Happy Clients</h2>
-        </div>
-        <div className="row">
-          <div className="col-sm-3 testimonialDiv">
-            <img src={ceoImg} alt="img here" />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad
-            </p>
-            <SubHeading>Allen Duckeat</SubHeading>
-            <SubHeading primary>Company</SubHeading>
-          </div>
-        </div>
-        <div className="container">
-          <Testimonials />
-        </div>
+        <Testimonials />
 
         {/* insights section */}
-        <div className="sectionHeader">
-          <h2>Latest Insights</h2>
-        </div>
-        <div className="row g-5 justify-content-center align-items-center">
-          <div className="col-md-3">
-            <div className="card">
-              <div className="card-body p-0 position-relative">
-                <img className="img-fluid" src={caseStudyImg2} alt="" />
-                <Button primary className="position-absolute top-0 end-0">
-                  03
-                  <br />
-                  Oct
-                </Button>
-              </div>
-              <div className="card-footer bg-white">
-                <p>by admin | Blogs V1</p>
-                <h4>Retail banks wake up to digital</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna
-                  aliqua....
-                </p>
-                <div className="d-flex justify-content-between border-top pt-1">
-                  <a href="" className="text-decoration-none text-black">
-                    Read More
-                  </a>
-                  <p>0 Comments</p>
+        <div className="insightsSection">
+          <div className="sectionHeader">
+            <h2>Latest Insights</h2>
+          </div>
+          <div className="row justify-content-center align-items-center">
+            <div className="col-md-3">
+              <div className="card">
+                <div className="card-body p-0 position-relative">
+                  <img className="img-fluid" src={latestInsightsImg1} alt="" />
+                  <Button primary className="position-absolute top-0 end-0">
+                    03
+                    <br />
+                    Oct
+                  </Button>
+                </div>
+                <div className="card-footer bg-white">
+                  <p>by admin | Blogs V1</p>
+                  <h4>Retail banks wake up to digital</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua....
+                  </p>
+                  <div className="d-flex justify-content-between border-top pt-1">
+                    <a href="" className="text-decoration-none text-black">
+                      Read More
+                    </a>
+                    <p>0 Comments</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="col-md-3">
-            <div className="card">
-              <div className="card-body p-0 position-relative">
-                <img className="img-fluid" src={caseStudyImg2} alt="" />
-                <Button primary className="position-absolute top-0 end-0">
-                  03
-                  <br />
-                  Oct
-                </Button>
-              </div>
-              <div className="card-footer bg-white">
-                <p>by admin | Blogs V1</p>
-                <h4>Retail banks wake up to digital</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna
-                  aliqua....
-                </p>
-                <div className="d-flex justify-content-between border-top pt-1">
-                  <a href="" className="text-decoration-none text-black">
-                    Read More
-                  </a>
-                  <p>0 Comments</p>
+            <div className="col-md-3">
+              <div className="card">
+                <div className="card-body p-0 position-relative">
+                  <img className="img-fluid" src={latestInsightsImg2} alt="" />
+                  <Button primary className="position-absolute top-0 end-0">
+                    03
+                    <br />
+                    Oct
+                  </Button>
+                </div>
+                <div className="card-footer bg-white">
+                  <p>by admin | Blogs V1</p>
+                  <h4>Retail banks wake up to digital</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua....
+                  </p>
+                  <div className="d-flex justify-content-between border-top pt-1">
+                    <a href="" className="text-decoration-none text-black">
+                      Read More
+                    </a>
+                    <p>0 Comments</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="col-md-3">
-            <div className="card">
-              <div className="card-body p-0 position-relative">
-                <img className="img-fluid" src={caseStudyImg2} alt="" />
-                <Button primary className="position-absolute top-0 end-0">
-                  03
-                  <br />
-                  Oct
-                </Button>
-              </div>
-              <div className="card-footer bg-white">
-                <p>by admin | Blogs V1</p>
-                <h4>Retail banks wake up to digital</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna
-                  aliqua....
-                </p>
-                <div className="d-flex justify-content-between border-top pt-1">
-                  <a href="" className="text-decoration-none text-black">
-                    Read More
-                  </a>
-                  <p>0 Comments</p>
+            <div className="col-md-3">
+              <div className="card">
+                <div className="card-body p-0 position-relative">
+                  <img className="img-fluid" src={latestInsightsImg3} alt="" />
+                  <Button primary className="position-absolute top-0 end-0">
+                    03
+                    <br />
+                    Oct
+                  </Button>
+                </div>
+                <div className="card-footer bg-white">
+                  <p>by admin | Blogs V1</p>
+                  <h4>Retail banks wake up to digital</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua....
+                  </p>
+                  <div className="d-flex justify-content-between border-top pt-1">
+                    <a href="" className="text-decoration-none text-black">
+                      Read More
+                    </a>
+                    <p>0 Comments</p>
+                  </div>
                 </div>
               </div>
             </div>

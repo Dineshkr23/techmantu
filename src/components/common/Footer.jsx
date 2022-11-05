@@ -1,13 +1,13 @@
 import React from "react";
-import footerLogo from "../../assets/images/icons/logo.png";
+import footerLogo from "../../assets/images/icons/logo.webp";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import emovurLogo from "../../assets/images/icons/emovur-dark.png";
-import emailIcon from "../../assets/images/icons/emailIcon.png";
-import emailSendIcon from "../../assets/images/icons/emailSendIcon.png";
+import emovurLogo from "../../assets/images/icons/emovur-dark.webp";
+import emailIcon from "../../assets/images/icons/emailIcon.webp";
+import emailSendIcon from "../../assets/images/icons/emailSendIcon.webp";
 import { Button } from "../styledComponents/Button";
 
 function Footer() {
