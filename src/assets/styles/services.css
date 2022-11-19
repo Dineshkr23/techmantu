@@ -1,0 +1,21 @@
+.serviceBannerDiv{
+    background: url('../images/serviceBanner.webp');
+    background-position: center center;
+    background-size: cover;
+    color: #ffffff;
+}
+.serviceBannerDiv h1{
+    font-size: 4rem;
+}
+.serviceBannerDiv>.container>p{
+    font-size: 1.3rem;
+}
+.navContainer,.topStripContainer{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.weSimplifyDigital img{
+    width: 2.5rem;
+    height: auto;
+}

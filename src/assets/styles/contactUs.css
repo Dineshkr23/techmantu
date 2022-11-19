@@ -1,0 +1,31 @@
+.contactUsDiv{
+    background: url('../images/contactUsBanner.webp');
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    height: 50vh;
+}
+.contactUsDiv h1{
+    color: #ffffff;
+    width: fit-content;
+    font-size: 4rem;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+}
+
+.contactUsBreadCrumDiv{
+    box-shadow: 0px 1px 5px 0px gray;
+}
+.contactUsBreadCrumDiv>div{
+    padding: 0.5rem 7rem;
+}
+
+.getInTouchDiv{
+    /* height: 280px !important; */
+}
+
+.getInTouchIcon{
+    width: 3rem;
+    height: auto;
+}

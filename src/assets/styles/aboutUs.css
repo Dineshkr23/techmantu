@@ -1,0 +1,27 @@
+.aboutUsLandingDiv{
+    background: url('../images/homeSliderImage1.webp');
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.7);
+    position: relative;
+}
+.aboutUsLandingDiv h1{
+    color: #ffffff;
+    width: fit-content;
+    font-size: 4rem;
+    /* transform: translate(100%, 400%); */
+    position: absolute;
+    top: 50%;
+    left: 32%;
+}
+
+.techCoreValues img{
+    width: 4rem;
+    height: auto;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 0.7rem;
+    margin-bottom: 1rem;
+}
+
+

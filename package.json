@@ -1,5 +1,6 @@
 {
   "name": "techmantu",
+  "homepage": "http://demo.emovur.com/techmantu",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,6 +14,7 @@
     "bootstrap": "^5.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-iframe": "^1.8.5",
     "react-scripts": "5.0.1",
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1",

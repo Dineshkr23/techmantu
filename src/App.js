@@ -1,12 +1,18 @@
 import './App.css';
-import NavBar from './components/common/NavBar';
-import TopStrip from './components/common/TopStrip';
+import AboutUs from './components/AboutUs';
+import CentersOfExcellence from './components/CentersOfExcellence';
+import ContactUs from './components/ContactUs';
 import Home from './components/Home';
+import Services from './components/Services';
 
 function App() {
   return (
     <div className="App">
-      <Home/>
+      {/* <Home/> */}
+      <Services/>
+      {/* <CentersOfExcellence/> */}
+      {/* <AboutUs/> */}
+      {/* <ContactUs/> */}
     </div>
   );
 }

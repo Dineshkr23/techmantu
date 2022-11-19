@@ -1,0 +1,32 @@
+.labsBannerDiv{
+    background: url('../images/labBanner.webp');
+    background-position: center center;
+    background-size: cover;
+    color: #ffffff;
+    width: auto;
+    height: 100vh;
+}
+.labsBannerDiv h1{
+    font-size: 4rem;
+}
+.labsHeadingDiv>p{
+    font-size: 1.3rem;
+}
+.labsHeadingDiv{
+    /* max-width: 29%; */
+    max-width: fit-content;
+    transform: translate(calc(50% - 100px), calc(100% + 20px));
+
+}
+.dataTrustDiv1, .dataTrustDiv2{
+    border: 1px solid #d1d0d0;
+    border-radius: 0.5rem;
+    padding: 3rem 2rem !important;
+    width: 400px !important;
+    height: 350px !important;
+}
+.dataTrustDiv2{
+    background-color: #c02529;
+    color: #ffffff;
+    padding: 5rem 2rem !important;
+}
