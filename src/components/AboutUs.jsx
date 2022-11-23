@@ -17,7 +17,7 @@ import Footer from "./common/Footer";
 function AboutUs() {
   return (
     <>
-      <div className="aboutUsLandingDiv">
+      <div className="aboutUsLandingDiv pt-3">
         <TopStrip />
         <div className="navContainer">
           <NavBar />
